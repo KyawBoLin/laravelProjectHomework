@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[Controller::class,'homePage']);
+
+Route::get('category',[Controller::class,'categoryPage']);
+
+Route::get('foodMenu',[Controller::class,'foodMenuPage'])->name('Food Menu');
