@@ -1,0 +1,15 @@
+@extends('webProject.Layouts.master')
+
+@section('css')
+
+@endsection
+
+@section('content')
+    @include('webProject.Layouts.banner')
+    @include('webProject.Layouts.category')
+    @include('webProject.Layouts.foodMenu')
+@endsection
+
+@section('script')
+
+@endsection
